@@ -1,0 +1,18 @@
+read -p  "Enter an integer : " integer
+if [  $(expr $integer % 2)  ==  0  ]
+then
+    echo “Value is not perfect”
+else
+    for (( i=1 ; i<=$integer; i+=2 )) do
+        for (( j=1 ; j<=i; j++ )) do
+            echo -n ""
+        done
+    echo
+    done
+    for (( i =$integer-2 ; i>=1; i-=2 )) do
+        for(( j=i; j>=1; --j )) do
+        echo -n ""
+        done
+    echo
+    done
+fi 

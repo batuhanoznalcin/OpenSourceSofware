@@ -1,3 +1,4 @@
+#! /bin/bash
 read -p  "Enter an integer : " integer
 if [  $(expr $integer % 2)  ==  0  ]
 then
